@@ -1,10 +1,9 @@
 # The URL the site will be built for
-# base_url = "https://maddyinadream.vercel.app"
-base_url = "http://127.0.0.1:1111"
+base_url = "https://maddyinadream.vercel.app"
 theme = "zap"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
+compile_sass = false
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
@@ -17,6 +16,10 @@ highlight_code = true
 [extra]
 # Put all your custom variables here
 inline_icons = true
-icon_path = "static/icons/"
 icons = ["home", "chat", "search", "light", "asleep", "rss"]
+keywords = "blog, personal, writing"
 
+menu_links = [
+  { url = "$BASE_URL/", name = "Home", icon = "home.svg" },
+  { url = "$BASE_URL/posts/", name = "Posts", icon = "chat.svg" },
+]
